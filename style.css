@@ -1,0 +1,226 @@
+@font-face{
+    font-family: Product Sans;
+    src: url(font/Product\ Sans\ Regular.ttf);
+}
+@font-face{
+    font-family: Product Sans B;
+    src: url(font/Product\ Sans\ Bold.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    background-color: orangered;
+}
+nav{
+    width: 100%;
+    height: 10vh;
+    padding: 00vw 10vw;
+    /*background-color: white;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 90;
+}
+
+nav a,i{
+    font-size: 1vw;
+    text-decoration: none;
+    font-family: product sans-serif ;
+    color: #fff;
+}
+.cntr_nav{
+    display: flex;
+    gap: 3vw;
+}
+nav i{
+    font-size: 1.5vw;
+}
+
+.one{
+    width: 100%;
+    height: 100vh;
+    background-color: aquamarine;
+    background: linear-gradient(150deg,rgb(244, 186, 78),rgb(239, 69, 7));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#fanta{
+    position: absolute;
+    width: 40%;
+    z-index: 2;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+#orange-cut{
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    left: 32%;
+    width: 15%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+
+}
+#orange{
+    width: 20%;
+    z-index: 3;
+    top: 55%;
+    right: 30%;
+    position: absolute;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+
+}
+.one h1{
+    font-size: 20VW;
+    @font-face{
+        font-family: Product Sans;
+        src: url(font/Product\ Sans\ Regular.ttf);
+    }
+    color: #fff;    
+}
+#leaf{
+    top: 10%;
+    left: 5%;
+    transform: rotate(60deg);
+    position: absolute;
+    width: 18%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+
+}
+#leaf2{
+    top: 70%;
+    left: 80%;
+    transform: rotate(-80deg);
+    position: absolute;
+    width: 12%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+
+}
+#leaf3{
+    position: absolute;
+    width: 20%;
+    top: 10%;
+    right: 0%;
+}
+.two{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: #f8e7d1;
+    background-color: #4d231c;
+}
+
+.lft-two,.rght-two{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    gap: 5vh;
+}
+.lft-two svg{
+    /*background-color: #e04428;*/
+    margin-top: 50vh;
+    width: 90%;
+    transform: rotateX(50deg);
+}
+.rght-two h1{
+    color: #fff;
+    font-size: 4vw;
+}
+.rght-two p{
+    font-size: 1vw;color: #fff;
+    width: 80%;
+}
+.three{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*position: relative;*/
+    gap: 5vw;
+    width: 100%;
+    height: 100vh;
+    /*background: linear-gradient(150deg,rgb(244, 186, 78),rgb(239, 69, 7));   */
+    background-color: #4d231c;
+
+
+}
+.card{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    gap: 2vh;
+    width: 25vw;
+    height: 70vh;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: 10vh;
+}
+.card:nth-child(1){
+    background-color: rgb(166, 88, 88);
+}
+.card:nth-child(2){
+    background-color: rgb(245, 191, 91);
+}
+.card:nth-child(3){
+    background-color: rgb(94, 197, 237);
+}
+.card h1{
+    font-size: 3vw;
+    margin-top: 50vh;
+
+}
+.card button{
+    padding: 1vw 2vw;
+    font-size: 1vw;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(243, 184, 74);
+    color: #fff;
+}
+
+#cocacola{
+    top: -10%;
+    position: absolute;
+    width: 60%;
+    left: 50%;
+    transform: translate(-50% 0%);
+    margin-top: -3%;
+    transform: translate(-50%, 0%);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+.lemon{
+    top: -30%;
+    width: 25vw;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, 0%);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+
+#pepsi{
+    top: -12%;
+    width: 85%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, 0%);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+
+}
